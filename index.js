@@ -3,6 +3,8 @@ var bodyParser = require("body-parser")
 var mongoose = require("mongoose")
 
 const app= express()
+app.set('server.keepAliveTimeout', 120000); 
+app.set('server.headersTimeout', 120000); 
 app.use(bodyParser.json())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({
