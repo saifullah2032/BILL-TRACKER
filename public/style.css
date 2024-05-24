@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'KyivTypeSerif';
+    src: url('path/to/your/font-file.woff2') format('woff2'), /* Replace with the actual path */
+         url('path/to/your/font-file.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'KyivTypeSerif', Helvetica, sans-serif;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.input-section input, .input-section select {
+    color: #000;
+    background-color: #FFF;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #DDDADA;
+    border-radius: 4px;
+}
+
+.input-section button {
+    padding: 5px 10px;
+    background-color: #DDDADA;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.expenses-list {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #DDDADA;
+    color: #000;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.home-button {
+    font-family: 'KyivTypeSerif', serif;
+    background-color: #fff;
+    color: black; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.home-button:hover {
+    background-color: #fff;
+    color: #000;
+}
